@@ -650,6 +650,11 @@ button:focus-visible {
   right: 0;
 }
 
+.deityFeaturedImage {
+  object-fit: cover;
+  object-position: center 25%;
+}
+
 .assetLabel {
   background: rgb(255 253 248 / 65%);
   border-radius: 20px;
@@ -657,7 +662,9 @@ button:focus-visible {
   font-size: 11px;
   letter-spacing: 0.18em;
   padding: 9px 12px;
+  position: relative;
   width: fit-content;
+  z-index: 1;
 }
 
 .deityFeatured > div:last-child {
@@ -704,6 +711,16 @@ button:focus-visible {
   letter-spacing: 0.16em;
   line-height: 16px;
   text-align: center;
+}
+
+.deityPhoto {
+  height: 296px;
+  position: relative;
+}
+
+.deityPhotoImage {
+  object-fit: cover;
+  object-position: center 23%;
 }
 
 .deityPlaceholder.darker {

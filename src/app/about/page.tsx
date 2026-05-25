@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = { title: "About & Deities" };
+
+const basePath = process.env.PAGES_BASE_PATH ?? "";
 
 export default function AboutPage() {
   return (
@@ -39,7 +42,15 @@ export default function AboutPage() {
         </div>
         <div className="deityGrid">
           <article className="deityFeatured">
-            <div className="assetLabel">HIGH-RES DEITY PHOTO</div>
+            <Image
+              alt="Panchamukha Hanuman decorated for worship in the sanctum"
+              className="deityFeaturedImage"
+              fill
+              priority
+              sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1180px) 66vw, 66vw"
+              src={`${basePath}/images/hanuman.jpeg`}
+            />
+            <div className="assetLabel">PANCHAMUKHA HANUMAN</div>
             <div>
               <small>MOOLAVIRAT</small>
               <h3>Panchamukha Hanuman</h3>
@@ -47,7 +58,15 @@ export default function AboutPage() {
             </div>
           </article>
           <article className="deityCard">
-            <div className="deityPlaceholder">DEITY IMAGE<br />PLACEMENT</div>
+            <div className="deityPhoto">
+              <Image
+                alt="Marakatha Shiva Lingam decorated for worship"
+                className="deityPhotoImage"
+                fill
+                sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1180px) 50vw, 33vw"
+                src={`${basePath}/images/shiva.jpeg`}
+              />
+            </div>
             <div>
               <small>SANCTUM DEITY</small>
               <h3>Marakatha Shiva Lingam</h3>
@@ -55,7 +74,15 @@ export default function AboutPage() {
             </div>
           </article>
           <article className="deityCard">
-            <div className="deityPlaceholder darker">DEITY IMAGE<br />PLACEMENT</div>
+            <div className="deityPhoto">
+              <Image
+                alt="Lalitha Parameswari Devi decorated for worship"
+                className="deityPhotoImage"
+                fill
+                sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1180px) 50vw, 33vw"
+                src={`${basePath}/images/lalitha.jpeg`}
+              />
+            </div>
             <div>
               <small>SANCTUM DEITY</small>
               <h3>Lalitha Parameswari Devi</h3>
@@ -63,7 +90,15 @@ export default function AboutPage() {
             </div>
           </article>
           <article className="deityCard">
-            <div className="deityPlaceholder">DEITY IMAGE<br />PLACEMENT</div>
+            <div className="deityPhoto">
+              <Image
+                alt="Valli Devasena Sametha Subramanya Swamy decorated for worship"
+                className="deityPhotoImage"
+                fill
+                sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1180px) 50vw, 33vw"
+                src={`${basePath}/images/skanda.jpeg`}
+              />
+            </div>
             <div>
               <small>SANCTUM DEITY</small>
               <h3>Valli Devasena Sametha Subramanya Swamy</h3>

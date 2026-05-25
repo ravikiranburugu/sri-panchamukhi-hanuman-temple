@@ -51,6 +51,6 @@ npm audit --audit-level=moderate
 
 ## Content Dependencies
 
-The current build deliberately uses placeholders for deity/gallery media, official bank credentials, UPI QR code, map details, and tax-exemption wording. Replace them only with officially approved temple content before deployment.
+The current build uses supplied sanctum photos for Panchamukha Hanuman, Marakatha Shiva Lingam, Lalitha Parameswari Devi and Valli Devasena Sametha Subramanya Swamy. Placeholders remain for unsupplied deity/gallery media, official bank credentials, UPI QR code, map details and tax-exemption wording.
 
 Donation is informational only. No payment processing or credential storage has been implemented.
