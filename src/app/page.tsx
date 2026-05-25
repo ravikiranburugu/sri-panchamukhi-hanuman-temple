@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const basePath = process.env.PAGES_BASE_PATH ?? "";
+
 export default function HomePage() {
   return (
     <>
@@ -10,7 +12,7 @@ export default function HomePage() {
           className="heroImage"
           fill
           priority
-          src="/images/hero-temple.avif"
+          src={`${basePath}/images/hero-temple.avif`}
         />
         <div className="heroShade" />
         <div className="heroContent">

@@ -19,6 +19,27 @@ npm install
 npm run dev
 ```
 
+To preview the exported site after a build:
+
+```bash
+npm run build
+npm start
+```
+
+## GitHub Pages Deployment
+
+The website is configured as a static Next.js export for GitHub Pages. Builds deployed from this repository are published under:
+
+`https://ravikiranburugu.github.io/sri-panchamukhi-hanuman-temple/`
+
+One-time repository setup:
+
+1. Open **Settings > Pages** in GitHub.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+3. Push the deployment configuration to `main`.
+
+The workflow in `.github/workflows/deploy-pages.yml` builds the static `out/` artifact with the GitHub Pages base path and deploys it on each push to `main`.
+
 ## Verify
 
 ```bash
